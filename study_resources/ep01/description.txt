@@ -1,0 +1,13 @@
+In this video you will (hopefully) learn the basis of what the CPU is, what Assembly is like and even use some Assembly code to create a functioning boot sector.
+
+New Video Next Sunday
+
+Ben Eater: https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA
+
+To install nasm and qemu on linux run the following commands:
+sudo apt update
+sudo apt install nasm
+sudo apt-get install qemu-system
+
+To install NASM on windows use this link: shorturl.at/gowT2
+(Look, it wasn't even a rickroll after all!)

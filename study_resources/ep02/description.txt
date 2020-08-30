@@ -1,0 +1,9 @@
+In this video you'll learn about BIOS interrupt calls and conditional jumps.
+Resources:
+NASM Cheat Sheet: https://www.bencode.net/blob/nasmcheatsheet.pdf
+'Assembler Programming Topics': https://stanislavs.org/helppc/idx_assembler.html
+ASCII table: http://www.asciitable.com/
+More on BIOS Interrupts: https://en.wikipedia.org/wiki/BIOS_interrupt_call
+
+Suggested videos:
+Ben Eater 6502: https://www.youtube.com/watch?v=LnzuMJLZRdU
