@@ -3,3 +3,6 @@ down.py
 filedown.py
 *.exe
 *.mp4
+*.bin
+*.o
+/practice
