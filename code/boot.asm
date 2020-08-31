@@ -1,46 +1,25 @@
 mov ah, 0x0e
-mov al, '1'
-mov bh, 0
-mov cl, 0
-top:
-    cmp bh, 20
-    je rnsline
-    inc bh
+;65 98 67 100
+mov al, 97
+mov eax, 0
+mov ebx, 33
+printSmall:
     int 0x10
-    jmp top
-rnsline:
-    mov al, 10
-    int 0x10
-    mov al, '2'
-    int 0x10
-    mov bl, 0
-    jmp rline
-rline:
-    cmp bl, 18
-    je rneline
-    mov al, '3'
-    int 0x10
-    inc bl
-    jmp rline
-rneline:
-    mov al, '4'
-    int 0x10
-    cmp cl, 8
-    je lastline
-    inc cl
-    jmp rnsline
-lastline:
-    mov al, 10
-    int 0x10
-    mov al, '5'
-    jmp bottom
-bottom:
-    cmp bh, 40
+    inc al
+    mov eax, 1
+    cmp al, 91
     je exit
+    jmp loop
+loop:
+    cmp eax, 0
+    je printSmall
+    sub al, ebx
     int 0x10
-    inc bh
-    jmp bottom
-
+    inc al
+    mov ebx, 0
+    cmp al, 122
+    je exit
+    jmp loop
 exit:
     jmp $
 times 510-($-$$) db 0 ; this lines fills all remaining blocks with 0 (kinda like padding) 
